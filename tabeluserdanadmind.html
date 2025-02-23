@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Pengaduan</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top op" data-bs-theme="dark" style="background: linear-gradient(135deg, rgba(158, 16, 146, 0.8), rgba(32, 88, 184, 0.8)); color: white">
+      <div class="container">
+        <img src="img/logo.png" alt="logo tangerang" width="40px" style="margin-right: 20px" />
+        <a class="navbar-brand" href="#">Desa Rawa Burung</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Pengaduan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal daftar laporan user dan admind -->
+    <div class="halaman-daftar-laporan">
+      <div class="container-daftar-laporan" style="margin-top: 80px">
+        <h2>Daftar Pengaduan</h2>
+
+        <button id="btnTambah" class="btn btn-primary mb-3" style="float: left;">Tambah Pengaduan</button>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Gambar</th>
+              <th>Judul</th>
+              <th>Kategori</th>
+              <th>Tanggal</th>
+              <th>Status</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="img/photo.png" alt="Jalan Berlubang" class="img-thumbnail" width="100" /></td>
+              <td>Jalan Berlubang</td>
+              <td><span class="badge bg-primary">Lingkungan</span></td>
+              <td>20 Februari 2025</td>
+              <td><span class="badge bg-warning">Menunggu</span></td>
+              <td><button class="btn btn-info btn-sm">Detail</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="img/photo.png" alt="Selokan Mampet" class="img-thumbnail" width="100" /></td>
+              <td>Selokan Mampet</td>
+              <td><span class="badge bg-danger">Keamanan</span></td>
+              <td>18 Februari 2025</td>
+              <td><span class="badge bg-success">Selesai</span></td>
+              <td><button class="btn btn-info btn-sm">Detail</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="img/photo.png" alt="Lampu Jalan Mati" class="img-thumbnail" width="100" /></td>
+              <td>Lampu Jalan Mati</td>
+              <td><span class="badge bg-secondary">Lainnya</span></td>
+              <td>15 Februari 2025</td>
+              <td><span class="badge bg-warning">Menunggu</span></td>
+              <td><button class="btn btn-info btn-sm">Detail</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Akhir Daftar laporan user dan admind -->
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

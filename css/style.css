@@ -1,0 +1,369 @@
+.navbar {
+  background: linear-gradient(135deg, #660c5e, #0b3172);
+  box-shadow: 2px 0px 3px #50084a;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+}
+
+/* Card Kelurahan */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.kelurahan {
+  background: white;
+  padding: 50px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kelurahan .card {
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* animasi gambar */
+.gambar {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gambar img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.gambar:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.gambar:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Visi Dan Misi */
+.visi-misi-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+.visi-misi {
+  background: linear-gradient(135deg, rgba(158, 16, 146, 0.8), rgba(32, 88, 184, 0.8));
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card-visi-misi {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style Petugas Kelurahan */
+
+.pemerintah_desa {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.scroll-wrapper {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+
+  /* Sembunyikan scrollbar */
+  scrollbar-width: none; /* Untuk Firefox */
+}
+.scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Untuk Chrome, Safari, Edge */
+}
+
+.foto_pegawai {
+  min-width: 200px;
+  max-width: 250px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(45deg, #d4145a, #2333ff);
+  color: white;
+  position: relative;
+}
+
+.foto_pegawai img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  filter: grayscale(80%);
+}
+
+.foto_pegawai.active img {
+  filter: grayscale(0%);
+}
+
+.foto_pegawai h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.scroll-wrapper {
+  cursor: default;
+}
+
+.scroll-wrapper.dragging {
+  cursor: default;
+}
+
+/* lokasi dan wilayah */
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+/* kontak dan footer */
+  .footer {
+    background: linear-gradient(135deg, #9e1092, #2058b8);
+    color: white;
+  }
+
+/* Css untuk Kontak.html */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  height: 150px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  color: #f8d210;
+  text-decoration: underline;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* login dan register */
+.container-login {
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.btn-custom {
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  color: white;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+.btn-custom:hover {
+  opacity: 0.8;
+}
+.toggle-link {
+  color: #9e1092;
+  cursor: pointer;
+}
+
+/* style form pengaduan */
+.container-pengaduan {
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+.btn-submit {
+  background: linear-gradient(135deg, #9e1092, #2058b8);
+  color: white;
+  border: none;
+  transition: opacity 0.3s ease;
+}
+.btn-submit:hover {
+  opacity: 0.8;
+}
+
+/* style halaman daftar laporan admind dan user */
+.halaman-daftar-laporan {
+  background: linear-gradient(135deg, rgba(158, 16, 146, 0.8), rgba(32, 88, 184, 0.8));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container-daftar-laporan {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Tabel */
+.table {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: white;
+  text-align: center;
+}
+
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+.table .badge {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+/* Tombol */
+.btn-info {
+  background-color: rgba(32, 88, 184, 0.9);
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: rgba(32, 88, 184, 1);
+}
+
+/* Badge Status */
+.badge {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+  color: black;
+}
+.bg-success {
+  background-color: #28a745 !important;
+  color: white;
+}
+.bg-primary {
+  background-color: #007bff !important;
+  color: white;
+}
+
+
+/* Agar footer tetap responsif */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+}
